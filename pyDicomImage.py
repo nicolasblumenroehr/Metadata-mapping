@@ -13,7 +13,6 @@ class pyDicomImage:
         self.pixelArray=[]
         
         for i in range(0, len(self.dicomFile.pixel_array[self.imageNumber-1])):
-        #for i in range(0, 3):
             dicomPixel=pyDicomPixelArray(self.dicomFile, self.imageNumber-1, i)
             dicomPixel.pixelMetadata()
             self.pixelArray.append(dicomPixel)
