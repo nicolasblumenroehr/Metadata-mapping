@@ -13,7 +13,7 @@ readSchema=readSchema()
 readSchema.schemaValidator(jsonSchema, draftDir)
 schema=readSchema.searchObject(jsonSchema)
 studyName="DicomTestStudy"
-studyLocation="URL"
+studyLocation="PATH" #directory or link, where the series of a study are deposited
 
 allDicomSeries=[]
 for i in os.listdir(studyLocation+studyName):
