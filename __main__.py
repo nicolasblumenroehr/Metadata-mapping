@@ -13,7 +13,7 @@ readSchema=readSchema()
 readSchema.schemaValidator(jsonSchema, draftDir)
 schema=readSchema.searchObject(jsonSchema)
 studyName="DicomTestStudy"
-studyLocation="PATH" #directory or link, where the series of a study are deposited
+studyLocation="PATH" #directory or link, where the series of a study are deposited, in this test case it is only one .dcm file (testseries) that makes up the study
 
 allDicomSeries=[]
 for i in os.listdir(studyLocation+studyName):
